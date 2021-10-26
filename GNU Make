@@ -10,8 +10,8 @@ Make به کاربر نهایی امکان می‌دهد بسته شما را ب
 
 
 
-Make is not limited to any particular language. For each non-source file in the program, the makefile specifies the shell commands to compute it. These shell commands can run a compiler to produce an object file, the linker to produce an executable, ar to update a library, or TeX or Makeinfo to format documentation.
-Make is not limited to building a package. You can also use Make to control installing or deinstalling a package, generate tags tables for it, or anything else you want to do often enough to make it worth while writing down how to do it.
+Make محدود به زبان خاصی نیست. برای هر فایل غیر منبع در برنامه، makefile دستورات پوسته برای محاسبه آن را مشخص می کند. این دستورات پوسته می توانند یک کامپایلر را برای تولید یک فایل شی، پیوند دهنده برای تولید یک فایل اجرایی، ar برای به روز رسانی کتابخانه، یا TeX یا Makeinfo را برای قالب بندی مستندات اجرا کنند
+Make محدود به ساخت پکیج نیست. همچنین می‌توانید از Make برای کنترل نصب یا حذف نصب یک بسته، ایجاد جداول برچسب‌ها برای آن، یا هر کار دیگری که می‌خواهید انجام دهید، استفاده کنید تا هنگام نوشتن نحوه انجام آن، ارزش آن را داشته باشید.
 Make Rules and Targets
 A rule in the makefile tells Make how to execute a series of commands in order to build a target file from source files. It also specifies a list of dependencies of the target file. This list should include all files (whether source files or other targets) which are used as inputs to the commands in the rule.
 
