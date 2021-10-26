@@ -3,10 +3,12 @@ GNU Make ابزاری است که تولید فایل‌های اجرایی و �
 
 Make دانش خود را در مورد نحوه ساخت برنامه شما از فایلی به نام makefile دریافت می کند که هر یک از فایل های غیر منبع و نحوه محاسبه آن را از فایل های دیگر فهرست می کند. وقتی برنامه ای می نویسید باید برای آن یک makefile بنویسید تا بتوان از Make برای ساخت و نصب برنامه استفاده کرد.
 
-Capabilities of Make
-Make enables the end user to build and install your package without knowing the details of how that is done -- because these details are recorded in the makefile that you supply.
-Make figures out automatically which files it needs to update, based on which source files have changed. It also automatically determines the proper order for updating files, in case one non-source file depends on another non-source file.
-As a result, if you change a few source files and then run Make, it does not need to recompile all of your program. It updates only those non-source files that depend directly or indirectly on the source files that you changed.
+قابلیت های Make
+Make به کاربر نهایی امکان می‌دهد بسته شما را بدون اطلاع از جزئیات نحوه انجام آن بسازد و نصب کند -- زیرا این جزئیات در فایل make که شما ارائه می‌کنید ثبت می‌شوند.
+به طور خودکار مشخص کنید که کدام فایل ها باید به روز شوند، بر اساس کدام فایل های منبع تغییر کرده اند. همچنین به طور خودکار ترتیب مناسب برای به‌روزرسانی فایل‌ها را تعیین می‌کند، در صورتی که یک فایل غیر منبع به فایل غیر منبع دیگری وابسته باشد
+در نتیجه، اگر چند فایل منبع را تغییر دهید و سپس Make را اجرا کنید، نیازی به کامپایل مجدد همه برنامه شما نیست. فقط آن دسته از فایل‌های غیر منبع را که به طور مستقیم یا غیرمستقیم به فایل‌های منبعی که تغییر داده‌اید وابسته هستند، به‌روزرسانی می‌کند.
+
+
 
 Make is not limited to any particular language. For each non-source file in the program, the makefile specifies the shell commands to compute it. These shell commands can run a compiler to produce an object file, the linker to produce an executable, ar to update a library, or TeX or Makeinfo to format documentation.
 Make is not limited to building a package. You can also use Make to control installing or deinstalling a package, generate tags tables for it, or anything else you want to do often enough to make it worth while writing down how to do it.
